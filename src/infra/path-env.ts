@@ -125,6 +125,7 @@ function candidateBinDirs(opts: EnsureOpenClawPathOpts): { prepend: string[]; ap
  * under launchd/minimal environments (and inside the macOS app bundle).
  */
 export function ensureOpenClawCliOnPath(opts: EnsureOpenClawPathOpts = {}) {
+  // READING: prevent reentry
   if (isTruthyEnvValue(process.env.OPENCLAW_PATH_BOOTSTRAPPED)) {
     return;
   }

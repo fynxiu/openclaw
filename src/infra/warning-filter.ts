@@ -71,7 +71,7 @@ export function installProcessWarningFilter(): void {
   if (state.installed) {
     return;
   }
-
+  // READING: function binding
   const originalEmitWarning = process.emitWarning.bind(process);
   const wrappedEmitWarning: typeof process.emitWarning = ((...args: unknown[]) => {
     if (shouldIgnoreWarning(normalizeWarningArgs(args))) {

@@ -117,6 +117,7 @@ export function ensurePluginRegistryLoaded(options?: {
     }
     return;
   }
+  // READING: TODO - READ it later
   const scopedConfig =
     !scopedLoad && scope === "configured-channels" && expectedChannelPluginIds.length > 0
       ? (withActivatedPluginIds({

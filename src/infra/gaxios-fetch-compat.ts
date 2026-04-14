@@ -288,6 +288,7 @@ export function createGaxiosCompatFetch(
 }
 
 export async function installGaxiosFetchCompat(): Promise<void> {
+  // READING: why check function?
   if (installState !== "not-installed" || typeof globalThis.fetch !== "function") {
     return;
   }

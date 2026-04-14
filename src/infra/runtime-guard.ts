@@ -9,6 +9,7 @@ type Semver = {
   patch: number;
 };
 
+// READING: TODO - vs openclaw.js
 const MIN_NODE: Semver = { major: 22, minor: 14, patch: 0 };
 const MINIMUM_ENGINE_RE = /^\s*>=\s*v?(\d+\.\d+\.\d+)\s*$/i;
 
