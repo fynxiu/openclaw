@@ -39,6 +39,7 @@ async function registerSubCliWithPluginCommands(
   }
 }
 
+// READING_INDEX: SUB_CORE COMMANDS
 // Note for humans and agents:
 // If you update the list of commands, also check whether they have subcommands
 // and set the flag accordingly.

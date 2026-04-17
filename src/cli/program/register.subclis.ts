@@ -28,6 +28,7 @@ export { getSubCliCommandsWithSubcommands };
 
 type SubCliRegistrar = (program: Command) => Promise<void> | void;
 
+// READING_INDEX: SUB COMMANDS
 const entrySpecs: readonly CommandGroupDescriptorSpec<SubCliRegistrar>[] = [
   ...defineImportedProgramCommandGroupSpecs([
     {

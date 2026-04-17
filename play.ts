@@ -27,3 +27,6 @@ console.log(typeof ALLOWED_LOG_LEVELS_);
 // } as const);
 // type NumberType = typeof string_number_tuple[number];
 // type StringType = (typeof withExtra)["foo" | "bar"];
+
+console.log("".trim() ? "true" : "false");
+console.log("a".trim() ? "true" : "false");
